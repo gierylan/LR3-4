@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .navbar-nav .nav-link {
+            color: var(--bs-dark) !important;
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link.active {
+            color: var(--bs-primary) !important;
+            font-weight: 500;
+        }
+        a.text-secondary:hover {
+            color: var(--bs-primary) !important;
+        }
+        .hero-image {
+            animation: floatUpDown 3s ease-in-out infinite;
+        }
+        @keyframes floatUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+    <!-- Navigation Bar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand text-dark fs-2 fw-bold" href="#">Awesome Product</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#heroSection">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-primary rounded-pill py-2 px-3 fw-semibold" href="#pricing">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="heroSection" class="container bg-white py-5 min-vh-100 d-flex align-items-center">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-3 fw-bold mb-4">Empower Your Business with Innovative Solutions</h1>
+                <p class="lead mb-5 text-secondary">Our cutting-edge product is designed to streamline your operations, enhance productivity, and drive growth.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center">
+                    <a href="#pricing" class="btn btn-primary rounded-pill py-2 px-3 fw-semibold me-sm-3 mb-3 mb-sm-0 icon-link icon-link-hover">
+                        Get Started
+                        <i class="bi bi-arrow-right ms-2 mb-2"></i>
+                    </a>
+                    <a href="#about" class="text-decoration-none d-flex align-items-center text-dark fw-semibold">
+                        <span class="btn rounded-circle border-3 border-primary text-white me-2 d-flex align-items-center justify-content-center" style="width:40px; height:40px;">
+                            <i class="bi bi-play-fill text-primary fs-3"></i>
+                        </span>
+                        Watch Video
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center">
+                <img src="https://illustrations.popsy.co/blue/remote-work.svg" class="img-fluid hero-image rounded" alt="Innovative Business Solutions Illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="badge text-primary-emphasis bg-primary-subtle rounded-pill mb-2 px-3 py-2 text-uppercase">About Us</span>
+                    <h2 class="display-5 fw-bold">Our Commitment to Your Success</h2>
+                    <p class="mt-4 text-secondary">We are a passionate team of innovators, developers, and strategists dedicated to creating products that solve real-world problems. Our mission is to empower businesses of all sizes with intuitive, reliable, and scalable technology solutions that foster long-term growth and efficiency.</p>
+                    <a href="#features" class="btn btn-primary rounded-pill py-2 px-3 fw-semibold mt-4 icon-link icon-link-hover">
+                        Read More
+                        <i class="bi bi-arrow-right ms-2 mb-2"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow-sm" alt="Our Team Working Together">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge text-primary-emphasis bg-primary-subtle rounded-pill mb-2 px-3 py-2 text-uppercase">Features</span>
+                <h2 class="h1 fw-bold text-dark">Our Advanced Features</h2>
+            </div>
+
+            <!-- Перша група фіч -->
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://illustrations.popsy.co/blue/app-launch.svg" class="img-fluid" alt="Advanced Features Illustration">
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                                <i class="bi bi-check-lg fs-4 text-primary me-3"></i>
+                                <h5 class="mb-0 fw-bold">Intuitive Dashboard</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                                <i class="bi bi-check-lg fs-4 text-primary me-3"></i>
+                                <h5 class="mb-0 fw-bold">Real-time Analytics</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                                <i class="bi bi-check-lg fs-4 text-primary me-3"></i>
+                                <h5 class="mb-0 fw-bold">Collaborative Tools</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                                <i class="bi bi-check-lg fs-4 text-primary me-3"></i>
+                                <h5 class="mb-0 fw-bold">Secure Data Storage</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                                <i class="bi bi-check-lg fs-4 text-primary me-3"></i>
+                                <h5 class="mb-0 fw-bold">Customizable Reports</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center p-3 rounded-4 bg-white shadow-sm h-100">
+                                <i class="bi bi-check-lg fs-4 text-primary me-3"></i>
+                                <h5 class="mb-0 fw-bold">24/7 Support</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Друга група фіч -->
+            <div class="row g-4 mt-5 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="https://illustrations.popsy.co/blue/digital-nomad.svg" class="img-fluid" alt="Mobile App Features Illustration">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-shield-check me-3 fs-2 text-primary mt-1"></i>
+                                <div class="content">
+                                    <h4 class="fw-bold fs-5">Secure &amp; Reliable</h4>
+                                    <p class="text-secondary fs-6">Rest easy knowing your data is protected with enterprise-grade security and reliability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-box-seam me-3 fs-2 text-primary mt-1"></i>
+                                <div class="content">
+                                    <h4 class="fw-bold fs-5">Seamless Integration</h4>
+                                    <p class="text-secondary fs-6">Integrate with your favorite tools and services effortlessly, saving you time and effort.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-globe me-3 fs-2 text-primary mt-1"></i>
+                                <div class="content">
+                                    <h4 class="fw-bold fs-5">Global Accessibility</h4>
+                                    <p class="text-secondary fs-6">Access your work from anywhere in the world, on any device, with our cloud-based platform.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-chat-text me-3 fs-2 text-primary mt-1"></i>
+                                <div class="content">
+                                    <h4 class="fw-bold fs-5">Dedicated Support</h4>
+                                    <p class="text-secondary fs-6">Our support team is available around the clock to assist you with any questions or issues you may have.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-lightbulb me-3 fs-2 text-primary mt-1"></i>
+                                <div class="content">
+                                    <h4 class="fw-bold fs-5">Intelligent Insights</h4>
+                                    <p class="text-secondary fs-6">Gain valuable insights from your data to make smarter decisions and drive business growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex">
+                                <i class="bi bi-bar-chart me-3 fs-2 text-primary mt-1"></i>
+                                <div class="content">
+                                    <h4 class="fw-bold fs-5">Scalable &amp; Flexible</h4>
+                                    <p class="text-secondary fs-6">Our platform grows with your business, adapting to your changing needs and requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-white py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge text-primary-emphasis bg-primary-subtle rounded-pill mb-2 px-3 py-2 text-uppercase">Pricing</span>
+                <h2 class="h1 fw-bold text-dark">Check Our Affordable Pricing</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Free Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="fw-bold text-success">Free Plan</h4>
+                            <div class="d-flex justify-content-center align-items-baseline my-3">
+                                <span class="h1 fw-bold text-dark">$0</span>
+                                <span class="text-secondary">/mo</span>
+                            </div>
+                            <div class="fs-1 text-success mb-4">
+                                <i class="bi bi-box"></i>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">Basic Features</li>
+                                <li class="mb-2">5 Projects Included</li>
+                                <li class="mb-2">Limited Storage</li>
+                                <li class="mb-2 text-secondary text-decoration-line-through">Priority Support</li>
+                                <li class="mb-2 text-secondary text-decoration-line-through">Custom Branding</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary rounded-pill px-5 mt-auto">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Starter Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-lg rounded-4 text-center">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="fw-bold text-primary">Starter Plan</h4>
+                            <div class="d-flex justify-content-center align-items-baseline my-3">
+                                <span class="h1 fw-bold text-dark">$19</span>
+                                <span class="text-secondary">/mo</span>
+                            </div>
+                            <div class="fs-1 text-primary mb-4">
+                                <i class="bi bi-send"></i>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">All Free Features</li>
+                                <li class="mb-2">Unlimited Projects</li>
+                                <li class="mb-2">50 GB Storage</li>
+                                <li class="mb-2">Standard Support</li>
+                                <li class="mb-2 text-secondary text-decoration-line-through">Custom Branding</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary rounded-pill px-5 mt-auto">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="fw-bold text-warning">Business Plan</h4>
+                            <div class="d-flex justify-content-center align-items-baseline my-3">
+                                <span class="h1 fw-bold text-dark">$29</span>
+                                <span class="text-secondary">/mo</span>
+                            </div>
+                            <div class="fs-1 text-warning mb-4">
+                                <i class="bi bi-airplane"></i>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">All Starter Features</li>
+                                <li class="mb-2">Unlimited Team Members</li>
+                                <li class="mb-2">200 GB Storage</li>
+                                <li class="mb-2">Priority Support</li>
+                                <li class="mb-2">Custom Branding</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary rounded-pill px-5 mt-auto">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ultimate Plan -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 text-center">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="fw-bold text-primary">Ultimate Plan</h4>
+                            <div class="d-flex justify-content-center align-items-baseline my-3">
+                                <span class="h1 fw-bold text-dark">$49</span>
+                                <span class="text-secondary">/mo</span>
+                            </div>
+                            <div class="fs-1 text-primary mb-4">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2">All Business Features</li>
+                                <li class="mb-2">Unlimited Everything</li>
+                                <li class="mb-2">1 TB Cloud Storage</li>
+                                <li class="mb-2">24/7 Priority Support</li>
+                                <li class="mb-2">Dedicated Account Manager</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary rounded-pill px-5 mt-auto">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge text-primary-emphasis bg-primary-subtle rounded-pill mb-2 px-3 py-2 text-uppercase">FAQ</span>
+                <h2 class="h1 fw-bold text-dark">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Left FAQ Column -->
+                <div class="col-lg-6">
+                    <div class="faq-item p-3 border-bottom border-secondary">
+                        <h3 class="d-flex justify-content-between align-items-center fs-5 fw-semibold mb-0" style="cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#faq-answer-1" aria-expanded="false" aria-controls="faq-answer-1">
+                            How do I get started with the free plan?
+                            <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </h3>
+                        <div id="faq-answer-1" class="collapse faq-answer">
+                            <p class="mb-0 mt-2 text-secondary fs-6">Simply click the "Get Started" button and follow the signup process. No credit card is required for the free plan.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item p-3 border-bottom border-secondary">
+                        <h3 class="d-flex justify-content-between align-items-center fs-5 fw-semibold mb-0" style="cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#faq-answer-2" aria-expanded="false" aria-controls="faq-answer-2">
+                            Can I upgrade my plan at any time?
+                            <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </h3>
+                        <div id="faq-answer-2" class="collapse faq-answer">
+                            <p class="mb-0 mt-2 text-secondary fs-6">Yes, you can upgrade your plan at any time directly from your account dashboard. The change will be applied immediately.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item p-3 border-bottom border-secondary">
+                        <h3 class="d-flex justify-content-between align-items-center fs-5 fw-semibold mb-0" style="cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#faq-answer-3" aria-expanded="false" aria-controls="faq-answer-3">
+                            What payment methods do you accept?
+                            <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </h3>
+                        <div id="faq-answer-3" class="collapse faq-answer">
+                            <p class="mb-0 mt-2 text-secondary fs-6">We accept all major credit cards, including Visa, Mastercard, American Express, and Discover. We also support payments via PayPal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right FAQ Column -->
+                <div class="col-lg-6">
+                    <div class="faq-item p-3 border-bottom border-secondary">
+                        <h3 class="d-flex justify-content-between align-items-center fs-5 fw-semibold mb-0" style="cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#faq-answer-4" aria-expanded="false" aria-controls="faq-answer-4">
+                            Is my data safe with your service?
+                            <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </h3>
+                        <div id="faq-answer-4" class="collapse faq-answer">
+                            <p class="mb-0 mt-2 text-secondary fs-6">Absolutely. We use industry-standard encryption and security protocols to ensure your data is always safe and private. Your trust is our top priority.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item p-3 border-bottom border-secondary">
+                        <h3 class="d-flex justify-content-between align-items-center fs-5 fw-semibold mb-0" style="cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#faq-answer-5" aria-expanded="false" aria-controls="faq-answer-5">
+                            Do you offer a refund policy?
+                            <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </h3>
+                        <div id="faq-answer-5" class="collapse faq-answer">
+                            <p class="mb-0 mt-2 text-secondary fs-6">We offer a 30-day money-back guarantee on all our paid plans. If you are not satisfied, we will provide a full refund, no questions asked.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item p-3 border-bottom border-secondary">
+                        <h3 class="d-flex justify-content-between align-items-center fs-5 fw-semibold mb-0" style="cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#faq-answer-6" aria-expanded="false" aria-controls="faq-answer-6">
+                            Can I cancel my subscription at any time?
+                            <i class="bi bi-chevron-right text-primary fs-5"></i>
+                        </h3>
+                        <div id="faq-answer-6" class="collapse faq-answer">
+                            <p class="mb-0 mt-2 text-secondary fs-6">Yes, you can cancel your subscription at any time from your account settings. Your plan will remain active until the end of the billing cycle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="badge text-primary-emphasis bg-primary-subtle rounded-pill mb-2 px-3 py-2 text-uppercase">Contact</span>
+                <h2 class="h1 fw-bold text-dark">Contact Us</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Left Column: Contact Cards -->
+                <div class="col-lg-5">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4">
+                                <div class="card-body p-4 text-center">
+                                    <div class="icon d-inline-flex justify-content-center align-items-center rounded-3 bg-primary-subtle text-primary mb-3" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-geo-alt fs-4"></i>
+                                    </div>
+                                    <h5 class="fw-bold text-dark">Address</h5>
+                                    <p class="mb-0 text-secondary">1600 Amphitheatre Parkway<br>Mountain View, CA 94043</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4">
+                                <div class="card-body p-4 text-center">
+                                    <div class="icon d-inline-flex justify-content-center align-items-center rounded-3 bg-primary-subtle text-primary mb-3" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-telephone fs-4"></i>
+                                    </div>
+                                    <h5 class="fw-bold text-dark">Call Us</h5>
+                                    <p class="mb-0 text-secondary">+1 (650) 253-0000<br>Mon-Fri: 9am - 5pm PST</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4">
+                                <div class="card-body p-4 text-center">
+                                    <div class="icon d-inline-flex justify-content-center align-items-center rounded-3 bg-primary-subtle text-primary mb-3" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-envelope fs-4"></i>
+                                    </div>
+                                    <h5 class="fw-bold text-dark">Email Us</h5>
+                                    <p class="mb-0 text-secondary">info@example.com<br>support@example.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4">
+                                <div class="card-body p-4 text-center">
+                                    <div class="icon d-inline-flex justify-content-center align-items-center rounded-3 bg-primary-subtle text-primary mb-3" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-clock fs-4"></i>
+                                    </div>
+                                    <h5 class="fw-bold text-dark">Open Hours</h5>
+                                    <p class="mb-0 text-secondary">Monday - Friday<br>9:00AM - 05:00PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+                            <form action="" method="post">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Subject" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control" rows="6" placeholder="Message" required></textarea>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <button type="submit" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h4 class="fw-bold text-dark">Join Our Newsletter</h4>
+                    <p class="text-secondary">Subscribe to our newsletter and receive the latest news about our products and services!</p>
+                    <form action="" method="post" class="mt-4">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-white border-top border-secondary-subtle">
+        <div class="container py-5">
+            <div class="row gy-4">
+                <!-- Column 1: Brand & Info -->
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="d-flex align-items-center text-decoration-none mb-3">
+                        <h3 class="text-dark fw-bold mb-0">Awesome Product</h3>
+                    </a>
+                    <p class="text-secondary">
+                        1600 Amphitheatre Parkway<br>
+                        Mountain View, CA 94043<br><br>
+                        <strong>Phone:</strong> +1 (650) 253-0000<br>
+                        <strong>Email:</strong> info@example.com
+                    </p>
+                </div>
+
+                <!-- Column 2: Useful Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-dark fw-bold pb-2">Useful Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Home</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#about" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">About us</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#features" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Features</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#pricing" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Pricing</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#faq" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">FAQ</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#contact" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Our Services -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-dark fw-bold pb-2">Our Services</h4>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Web Design</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Web Development</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Product Management</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Marketing</a>
+                        </li>
+                        <li class="d-flex align-items-center py-2">
+                            <i class="bi bi-chevron-right text-primary me-2"></i>
+                            <a href="#" class="text-secondary link-offset-3-hover link-underline-primary link-underline-opacity-0 link-underline-opacity-75-hover">Graphic Design</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Follow Us -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-dark fw-bold pb-2">Follow Us</h4>
+                    <p class="text-secondary">Stay connected with us on social media for the latest updates and news!</p>
+                    <div class="mt-3 d-flex">
+                        <a href="#" class="rounded-circle bg-body-tertiary text-primary p-2 me-2 d-flex justify-content-center align-items-center text-decoration-none" style="width: 40px; height: 40px;">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-body-tertiary text-primary p-2 me-2 d-flex justify-content-center align-items-center text-decoration-none" style="width: 40px; height: 40px;">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-body-tertiary text-primary p-2 me-2 d-flex justify-content-center align-items-center text-decoration-none" style="width: 40px; height: 40px;">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="rounded-circle bg-body-tertiary text-primary p-2 me-2 d-flex justify-content-center align-items-center text-decoration-none" style="width: 40px; height: 40px;">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container py-4">
+            <div class="text-center text-secondary">
+                &copy; Copyright <strong><span>Awesome Product</span></strong>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
